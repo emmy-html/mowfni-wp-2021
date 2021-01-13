@@ -4,6 +4,7 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="index" />
     <?php wp_head(); ?>
     <!-- Global site tag (gtag.js) - Google Ads: 700123484 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-700123484"></script>

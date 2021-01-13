@@ -3,6 +3,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
+<meta name="robots" content="index" />
 <script src="https://kit.fontawesome.com/33391c5587.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
 <?php wp_head(); ?>
