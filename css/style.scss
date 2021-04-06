@@ -209,6 +209,10 @@ textarea {
     }
   }
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
 body {
   background: $dark-blue;
   color: #fff;
@@ -1909,7 +1913,7 @@ footer {
     background: #fff;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     article {
       @include fontawesome-icon;
@@ -1953,8 +1957,9 @@ footer {
         text-align: left;
       }
       .button-container {
-        margin-top: 10px;
         padding: 20px;
+        width: 40% !important;
+        margin: 0 auto;
         .rounded-green-button {
           @include body-green-button;
           &:hover {
@@ -2273,6 +2278,113 @@ footer {
       margin: 0;
       padding: 0px 20px;
       text-align: justify;
+    }
+    .button-container {
+      @include button-container;
+      margin-top: 15px;
+      a:link,
+      a:visited {
+        @include body-green-button;
+        &:hover {
+          background: white;
+        }
+      }
+    }
+  }
+}
+/* march 4 meals landing page */ 
+#m4m-landing-page {
+  @include page-header;
+  background: #fff;
+  color: $dark-blue;
+  img:nth-of-type(1) {
+    width: 100%;
+  }
+  .desktop-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .m4m-cta {
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding-top: 10px;
+      span {
+        display: block
+      }
+    }
+    h3 {
+      padding-bottom: 10px;
+    }
+    .social-container {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .social-image-share {
+      display: flex;
+      flex-flow: row wrap;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin: 3px;
+      }
+    }
+  }
+  .m4m-more-info {
+    aside {
+      img {
+        width: 100%;
+      }
+      &:first-of-type {
+        p {
+          text-align: justify;
+        }
+      }
+      &:nth-of-type(2) {
+        h4 {
+          font-weight: bold;
+          line-height: 1.25rem;
+          text-transform: none;
+        }
+      }
+      .button-container {
+        margin-top: 10px;
+        a:link,
+        a:visited {
+          @include body-blue-button;
+          border-bottom: 0px;
+          margin: 10px 0px;
+          text-decoration: none;
+        }
+      }
+      .social-container {
+        text-align: center;
+      }
+    }
+  }
+}
+#m4m-footer {
+  img {
+    width: 100%;
+  }
+}
+/* volunteer interest form page */ 
+#volunteer-interest-form-page {
+  @include page-header;
+  background: #fff;
+  color: $dark-blue;
+  width: 100%;
+  h2 {
+    font-weight: bold;
+    padding: 10px 0px;
+  }
+  .volunteer-interest-form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .filler-image {
+      
     }
   }
 }
@@ -3213,6 +3325,58 @@ footer {
       }
     }
   }
+    /* march 4 meals */ 
+    #m4m-landing-page {
+      .desktop-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .m4m-cta {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px;
+
+        h2 {
+          font-size: 2.5rem;
+          line-height: 2.65rem;
+        }
+        p {
+          width: 80%;
+          margin: 0 auto;
+          padding: 20px 0px;
+          text-align: center;
+        }
+        .content-wrapper {
+          width: 35%;
+        }
+        .social-image-share {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin: 0px 10px;
+          width: 65%;
+          img {
+            width: 250px;
+          }
+        }
+      }
+      .m4m-more-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aside {
+          &:nth-of-type(1) {
+            width: 75%;
+          }
+          &:nth-of-type(2) {
+            width: 20%;
+          }
+        }
+      }
+    }
 }
 /* Very Large Desktop Screens */
 @media screen and (min-width: 1500px) {

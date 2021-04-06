@@ -95,7 +95,7 @@
                 </article>
             </div>
             <article class="map">
-                <?php if( get_field('mapƒ') ): ?>
+                <?php if( get_field('map') ): ?>
                 <?php the_field('map'); ?>
                 <?php endif; ?>
             </article>
@@ -117,6 +117,11 @@
                 </h2>
                 <p>There is no cost to participants. We do ask all participants for a voluntary contribution.
                     No one is ever denied service if they are unable or unwilling to contribute.</p>
+                    <div class="button-container">
+                    <?php if (get_field('menu')) : ?>
+                        <a href="<?php the_field('menu'); ?>" target="_blank" class="rounded-green-button">View Our Menu &#8250;</a>
+                    <?php endif; ?>
+                    </div>
             </div>
         </article>
         </div>
