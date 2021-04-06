@@ -4791,7 +4791,43 @@ footer {
     #m4m-landing-page .m4m-more-info aside:nth-of-type(1) {
       width: 75%; }
     #m4m-landing-page .m4m-more-info aside:nth-of-type(2) {
-      width: 20%; } }
+      width: 20%; }
+
+  /* volunteer interest form page */
+  #volunteer-interest-form-page .volunteer-interest-form-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    #volunteer-interest-form-page .volunteer-interest-form-content h2 {
+      padding: 5px 0px; }
+    #volunteer-interest-form-page .volunteer-interest-form-content .form-container {
+      width: 45%;
+      padding-left: 100px; }
+      #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="text"],
+      #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="email"],
+      #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="date"] {
+        font-size: 1.25rem;
+        padding: 3px; }
+      #volunteer-interest-form-page .volunteer-interest-form-content .form-container form #availability {
+        margin-top: 10px;
+        /* style the days of the week list */ }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form #availability .checkbox-970 span {
+          display: flex;
+          flex-flow: row wrap; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form #availability .checkbox-970 .wpcf7-list-item label {
+          display: flex;
+          font-weight: normal;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 5px 15px; }
+    #volunteer-interest-form-page .volunteer-interest-form-content .filler-image {
+      background-image: linear-gradient(to left, transparent 0%, transparent 70%, white), linear-gradient(to bottom, transparent 0%, transparent 30%, white), url("img/volunteer-interest-hero.png");
+      background-size: cover;
+      height: 500px;
+      position: absolute;
+      right: 0;
+      width: 40%; } }
 /* Very Large Desktop Screens */
 @media screen and (min-width: 1500px) {
   #popover .sticky.donation-popover {
