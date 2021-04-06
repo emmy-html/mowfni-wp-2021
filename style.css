@@ -3974,7 +3974,61 @@ footer {
   #volunteer-interest-form-page .volunteer-interest-form-content {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    width: 100%; }
+    #volunteer-interest-form-page .volunteer-interest-form-content .form-container {
+      margin: 10px; }
+      #volunteer-interest-form-page .volunteer-interest-form-content .form-container form {
+        /* style the checkbox next to the label */ }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="text"],
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="email"],
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="date"] {
+          border: 3px solid #003952;
+          width: 96%;
+          margin-top: 5px !important; }
+          #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="text"]:hover,
+          #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="email"]:hover,
+          #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="date"]:hover {
+            border: 3px solid #a9cf38;
+            transition: .3s border; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="submit"] {
+          background: #a9cf38;
+          border: none;
+          border-radius: 10px;
+          color: #003952;
+          font-family: "Poppins", sans-serif;
+          font-weight: bold;
+          width: 100%;
+          padding: 15px;
+          text-transform: uppercase;
+          margin-top: 10px; }
+          #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="submit"]:hover {
+            background: #00b5c2;
+            cursor: pointer;
+            transition: .3s background-color; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="checkbox"] {
+          margin-left: 5px; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form label {
+          font-family: "Poppins", sans-serif;
+          font-weight: bold; }
+      #volunteer-interest-form-page .volunteer-interest-form-content .form-container #availability {
+        /* style the days of the week list */ }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container #availability .checkbox-970 span {
+          display: flex;
+          flex-direction: column; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container #availability .checkbox-970 .wpcf7-list-item label {
+          display: flex;
+          font-weight: normal;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 5px 15px; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container #availability #time-of-day label {
+          font-weight: normal; }
+    #volunteer-interest-form-page .volunteer-interest-form-content .filler-image {
+      background-image: linear-gradient(to top, transparent 0%, transparent 95%, white), url("img/volunteer-interest-hero.png");
+      background-size: 100%;
+      height: 300px; }
 
 /* Large Tablets & Desktop Styles */
 @media screen and (min-width: 992px) {
