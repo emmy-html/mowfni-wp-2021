@@ -3968,9 +3968,6 @@ footer {
     width: 100%; }
     #volunteer-interest-form-page h1 span {
       color: #003952; }
-  #volunteer-interest-form-page h2 {
-    font-weight: bold;
-    padding: 10px 0px; }
   #volunteer-interest-form-page .volunteer-interest-form-content {
     display: flex;
     flex-direction: column;
@@ -3982,15 +3979,19 @@ footer {
         /* style the checkbox next to the label */ }
         #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="text"],
         #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="email"],
-        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="date"] {
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="date"],
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form textarea[name="address"] {
           border: 3px solid #003952;
           width: 96%;
           margin-top: 5px !important; }
           #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="text"]:hover,
           #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="email"]:hover,
-          #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="date"]:hover {
+          #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="date"]:hover,
+          #volunteer-interest-form-page .volunteer-interest-form-content .form-container form textarea[name="address"]:hover {
             border: 3px solid #a9cf38;
             transition: .3s border; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form textarea[name="address"] {
+          height: 60px; }
         #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="submit"] {
           background: #a9cf38;
           border: none;
@@ -4007,16 +4008,34 @@ footer {
             cursor: pointer;
             transition: .3s background-color; }
         #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="checkbox"] {
-          margin-left: 5px; }
+          margin-right: 10px; }
         #volunteer-interest-form-page .volunteer-interest-form-content .form-container form label {
           font-family: "Poppins", sans-serif;
           font-weight: bold; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form #week {
+          font-weight: normal !important; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form .wpcf7-response-output {
+          margin: 0px !important; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form .wpcf7-not-valid-tip {
+          display: inline-flex; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form p {
+          margin: 0px !important; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form select {
+          border: 3px solid #003952;
+          margin: 10px 0px;
+          padding: 3px;
+          width: 100%; }
+          #volunteer-interest-form-page .volunteer-interest-form-content .form-container form select:hover {
+            border: 3px solid #a9cf38;
+            transition: .3s border; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form h2 {
+          padding: 10px; }
       #volunteer-interest-form-page .volunteer-interest-form-content .form-container #availability {
         /* style the days of the week list */ }
-        #volunteer-interest-form-page .volunteer-interest-form-content .form-container #availability .checkbox-970 span {
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container #availability .checkbox-845 span {
           display: flex;
           flex-direction: column; }
-        #volunteer-interest-form-page .volunteer-interest-form-content .form-container #availability .checkbox-970 .wpcf7-list-item label {
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container #availability .checkbox-845 .wpcf7-list-item label {
           display: flex;
           font-weight: normal;
           flex-direction: row;
@@ -4029,6 +4048,421 @@ footer {
       background-image: linear-gradient(to top, transparent 0%, transparent 95%, white), url("img/volunteer-interest-hero.png");
       background-size: 100%;
       height: 300px; }
+
+/* wordpress specific styles */
+.wp-block-video {
+  width: 40% !important;
+  margin: 0 auto;
+  padding: 20px 0px; }
+
+.center-img {
+  margin: 0 auto;
+  padding: 20px 0px; }
+
+.volunteer-luncheon-letters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px; }
+  .volunteer-luncheon-letters img {
+    width: 30%; }
+
+/* google map location descriptions */
+.wpgmza_infowindow_title,
+.wpgmza_infowindow_address {
+  display: none;
+  width: 400px; }
+  .wpgmza_infowindow_title::-webkit-scrollbar,
+  .wpgmza_infowindow_address::-webkit-scrollbar {
+    background: #003952; }
+
+.wpgmza_infowindow_description {
+  color: #003952;
+  overflow: visible; }
+  .wpgmza_infowindow_description h3 {
+    font-size: .85rem;
+    line-height: 1rem;
+    padding: 0px !important;
+    text-align: left;
+    text-transform: none !important; }
+    .wpgmza_infowindow_description h3 span {
+      display: block; }
+  .wpgmza_infowindow_description p {
+    margin: 5px 0px; }
+
+.gmpInfoWindowtitle {
+  font-family: "Poppins", sans-serif; }
+
+.egm-marker-iw {
+  color: #000 !important; }
+  .egm-marker-iw p {
+    color: #000 !important;
+    margin: 0;
+    padding: 5px 0px; }
+
+/* search bar/store locator */
+div.pac-container.pac-logo {
+  /* make sure search results come up directly below input box */
+  top: 87.5px !important;
+  width: 200%; }
+
+/* style search bar */
+input.wpgmza-address {
+  border: 2px solid #003952;
+  width: 100% !important; }
+
+.wpgmza-address-container.wpgmza-form-field.wpgmza_sl_query_div {
+  width: 100%; }
+
+/* search bar container */
+.wpgmza-store-locator {
+  background: #fff;
+  color: #003952;
+  width: 100%;
+  /* hide labels */
+  /* hide use my location feature */ }
+  .wpgmza-store-locator button,
+  .wpgmza-store-locator input[type="button"] {
+    background: #003952;
+    border: none;
+    color: #a9cf38;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    outline: none;
+    padding: 7px;
+    height: 30px;
+    text-transform: uppercase; }
+    .wpgmza-store-locator button i,
+    .wpgmza-store-locator input[type="button"] i {
+      color: #a9cf38; }
+    .wpgmza-store-locator button:hover,
+    .wpgmza-store-locator input[type="button"]:hover {
+      background: #a9cf38;
+      color: #003952;
+      cursor: pointer;
+      transition: .3s all; }
+  .wpgmza-store-locator .wpgmza-search,
+  .wpgmza-store-locator .wpgmza-radius,
+  .wpgmza-store-locator .wpgmza-reset {
+    width: 95px; }
+  .wpgmza-store-locator select.wpgmza-radius {
+    border: 2px solid #003952;
+    background: white; }
+  .wpgmza-store-locator label {
+    display: none !important; }
+  .wpgmza-store-locator button.wpgmza-use-my-location {
+    display: none !important; }
+
+/* annual report page template */
+#annual-report-page-template {
+  background: #fff;
+  color: #003952; }
+  #annual-report-page-template h1 {
+    background: #a9cf38;
+    color: #003952;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 10px 0px;
+    margin: 0 auto;
+    width: 100%; }
+    #annual-report-page-template h1 span {
+      color: #003952; }
+  #annual-report-page-template .container-pdf {
+    margin: 25px 0px; }
+  #annual-report-page-template .wp-block-file__button {
+    background: #a9cf38;
+    border-radius: 5px;
+    border-bottom: none;
+    padding: 5px 15px;
+    font-size: 1.25rem;
+    margin: 10px; }
+    #annual-report-page-template .wp-block-file__button:hover {
+      background: #00b5c2;
+      transition: 1s background; }
+    #annual-report-page-template .wp-block-file__button:hover {
+      color: #003952;
+      opacity: 1; }
+
+/* general page template */
+#general-page-template {
+  background: #fff;
+  color: #003952; }
+  #general-page-template h1 {
+    background: #a9cf38;
+    color: #003952;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 10px 0px;
+    margin: 0 auto;
+    width: 100%; }
+    #general-page-template h1 span {
+      color: #003952; }
+
+/* smart slider */
+#body-adjust {
+  margin-top: 90px; }
+
+#body-adjust-main {
+  margin-top: 70px; }
+
+.adjust-container {
+  margin-top: 70px !important; }
+
+/* slider button */
+div#n2-ss-3 .n2-ss-button-container:hover,
+div#n2-ss-3 .n2-ss-button-container a:hover {
+  background: #00b5c2;
+  border-radius: 5px;
+  transition: 1s background-color; }
+
+/* foobox galleries */
+.foogallery {
+  padding: 40px 0px; }
+
+.foogallery.fg-light .fg-item-inner {
+  border: none !important;
+  background-color: none !important;
+  box-shadow: none !important; }
+
+/* hidden donation page template */
+#hidden-donation-page-template {
+  background: #fff;
+  color: #003952; }
+  #hidden-donation-page-template h1 {
+    background: #a9cf38;
+    color: #003952;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 10px 0px;
+    margin: 0 auto;
+    width: 100%; }
+    #hidden-donation-page-template h1 span {
+      color: #003952; }
+  #hidden-donation-page-template .donation-page-content-container {
+    margin: 0 auto;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    #hidden-donation-page-template .donation-page-content-container img {
+      width: 100%; }
+    #hidden-donation-page-template .donation-page-content-container .donation-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    #hidden-donation-page-template .donation-page-content-container h2 {
+      font-weight: 400;
+      line-height: 2rem;
+      text-transform: none;
+      padding: 20px 0px; }
+
+/* press release donation page template */
+#press-release-donation-page-template {
+  background: #fff;
+  color: #003952; }
+  #press-release-donation-page-template h1 {
+    background: #a9cf38;
+    color: #003952;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 10px 0px;
+    margin: 0 auto;
+    width: 100%; }
+    #press-release-donation-page-template h1 span {
+      color: #003952; }
+  #press-release-donation-page-template img {
+    width: 100%; }
+  #press-release-donation-page-template .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+    #press-release-donation-page-template .button-container a:link,
+    #press-release-donation-page-template .button-container a:visited {
+      border-bottom: none;
+      color: #003952;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase; }
+      #press-release-donation-page-template .button-container a:link:hover,
+      #press-release-donation-page-template .button-container a:visited:hover {
+        border-bottom: none; }
+    #press-release-donation-page-template .button-container .rounded-green-button {
+      background: #a9cf38;
+      border-radius: 5px;
+      border-bottom: none;
+      padding: 5px 15px;
+      margin-bottom: 20px; }
+      #press-release-donation-page-template .button-container .rounded-green-button:hover {
+        background: #00b5c2;
+        transition: 1s background; }
+  #press-release-donation-page-template h3 {
+    line-height: 1.5rem;
+    text-transform: none;
+    padding-bottom: 15px; }
+
+/* pop up box */
+#sgpb-popup-dialog-main-div {
+  background-color: #a9cf38 !important;
+  color: #003952; }
+  #sgpb-popup-dialog-main-div .sg-popup-builder-content h1 {
+    line-height: 2rem; }
+  #sgpb-popup-dialog-main-div .sg-popup-builder-content h2 {
+    font-size: 1.75rem;
+    line-height: 1.95rem;
+    text-transform: none; }
+
+.pop-up-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+  .pop-up-button-container a:link,
+  .pop-up-button-container a:visited {
+    border-bottom: none;
+    color: #003952;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .pop-up-button-container a:link:hover,
+    .pop-up-button-container a:visited:hover {
+      border-bottom: none; }
+  .pop-up-button-container a:link,
+  .pop-up-button-container a:visited {
+    background: #00b5c2;
+    border: 3px solid #00b5c2;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 10px 0px; }
+    .pop-up-button-container a:link:hover,
+    .pop-up-button-container a:visited:hover {
+      background-color: transparent !important;
+      border: 3px solid #003952;
+      transition: 1s background-color; }
+
+/* hide popover */
+.hide-popover {
+  display: none !important;
+  visibility: hidden !important; }
+
+/* response to COVID-19 page */
+#covid-response-page {
+  background: #fff;
+  color: #003952; }
+  #covid-response-page h1 {
+    background: #a9cf38;
+    color: #003952;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 10px 0px;
+    margin: 0 auto;
+    width: 100%; }
+    #covid-response-page h1 span {
+      color: #003952; }
+  #covid-response-page .volunteer-page-opportunities-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #covid-response-page .volunteer-page-opportunities-container i {
+      background: #003952;
+      color: #a9cf38;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      border-radius: 200px;
+      margin: 0 auto; }
+    #covid-response-page .volunteer-page-opportunities-container article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 350px; }
+      #covid-response-page .volunteer-page-opportunities-container article h2 {
+        font-size: 2rem;
+        line-height: 2rem; }
+      #covid-response-page .volunteer-page-opportunities-container article h3 {
+        font-size: 2rem;
+        line-height: 2rem;
+        margin: 0px; }
+      #covid-response-page .volunteer-page-opportunities-container article a:link,
+      #covid-response-page .volunteer-page-opportunities-container article a:visited {
+        text-decoration: none; }
+        #covid-response-page .volunteer-page-opportunities-container article a:link:hover,
+        #covid-response-page .volunteer-page-opportunities-container article a:visited:hover {
+          border-bottom: none; }
+    #covid-response-page .volunteer-page-opportunities-container h3 {
+      margin-top: 15px; }
+    #covid-response-page .volunteer-page-opportunities-container aside {
+      padding: 10px 0px;
+      width: 100%; }
+  @media screen and (min-width: 992px) {
+    #covid-response-page .volunteer-page-opportunities-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 0px; }
+      #covid-response-page .volunteer-page-opportunities-container aside {
+        width: 25%;
+        height: 500px; }
+        #covid-response-page .volunteer-page-opportunities-container aside i {
+          margin-top: 40px; } }
+  #covid-response-page .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%; }
+    #covid-response-page .button-container a:link,
+    #covid-response-page .button-container a:visited {
+      border-bottom: none;
+      color: #003952;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase; }
+      #covid-response-page .button-container a:link:hover,
+      #covid-response-page .button-container a:visited:hover {
+        border-bottom: none; }
+    #covid-response-page .button-container .rounded-green-button {
+      background: #a9cf38;
+      border-radius: 5px;
+      border-bottom: none;
+      padding: 5px 15px; }
+      #covid-response-page .button-container .rounded-green-button:hover {
+        background: #00b5c2;
+        transition: 1s background; }
+    #covid-response-page .button-container .rounded-blue-button {
+      background: #00b5c2;
+      border-radius: 5px;
+      padding: 5px 15px;
+      margin-bottom: 20px; }
+      #covid-response-page .button-container .rounded-blue-button:hover {
+        background: #a9cf38;
+        transition: 1s background; }
+  #covid-response-page .covid-response-map {
+    width: 100%; }
+
+/* google translate plugin */
+#translate-option {
+  background: #00b5c2 !important; }
+
+.translate-section {
+  z-index: 9999;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  padding: 3px;
+  border-radius: 0px 5px 0px 0px; }
 
 /* Large Tablets & Desktop Styles */
 @media screen and (min-width: 992px) {
@@ -4157,7 +4591,7 @@ footer {
   footer p {
     font-size: 1rem; }
   footer article.image-footer-logo {
-    padding-top: 100px; }
+    padding-top: 0px; }
   footer .navigation a:link,
   footer .navigation a:visited {
     font-size: 1rem;
@@ -4439,10 +4873,10 @@ footer {
       justify-content: space-around; }
       #about-mow-page-locations .about-mow-page-locations-content .map {
         width: 55%;
-        height: 600px; }
+        height: 656px; }
       #about-mow-page-locations .about-mow-page-locations-content .map-locations {
         width: 45%;
-        height: 600px;
+        height: 656px;
         overflow-y: scroll;
         overflow-x: hidden; }
         #about-mow-page-locations .about-mow-page-locations-content .map-locations .map-locations-container {
@@ -4794,385 +5228,69 @@ footer {
       width: 20%; }
 
   /* volunteer interest form page */
-  #volunteer-interest-form-page .volunteer-interest-form-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-    #volunteer-interest-form-page .volunteer-interest-form-content h2 {
-      padding: 5px 0px; }
-    #volunteer-interest-form-page .volunteer-interest-form-content .form-container {
-      width: 45%;
-      padding-left: 100px; }
-      #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="text"],
-      #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="email"],
-      #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="date"] {
-        font-size: 1.25rem;
-        padding: 3px; }
-      #volunteer-interest-form-page .volunteer-interest-form-content .form-container form #availability {
-        margin-top: 10px;
-        /* style the days of the week list */ }
-        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form #availability .checkbox-970 span {
+  #volunteer-interest-form-page {
+    min-height: 600px; }
+    #volunteer-interest-form-page .volunteer-interest-form-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      #volunteer-interest-form-page .volunteer-interest-form-content h2 {
+        padding: 20px 0px; }
+      #volunteer-interest-form-page .volunteer-interest-form-content .form-container {
+        width: 45%;
+        padding-left: 100px; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form #name {
           display: flex;
-          flex-flow: row wrap; }
-        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form #availability .checkbox-970 .wpcf7-list-item label {
-          display: flex;
-          font-weight: normal;
-          flex-direction: row;
-          justify-content: flex-start;
-          align-items: center;
-          padding: 5px 15px; }
-    #volunteer-interest-form-page .volunteer-interest-form-content .filler-image {
-      background-image: linear-gradient(to left, transparent 0%, transparent 70%, white), linear-gradient(to bottom, transparent 0%, transparent 30%, white), url("img/volunteer-interest-hero.png");
-      background-size: cover;
-      height: 500px;
-      position: absolute;
-      right: 0;
-      width: 40%; } }
+          flex-direction: center;
+          justify-content: space-between; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="text"],
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="email"],
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form select {
+          font-size: 1.25rem;
+          padding: 3px;
+          width: 100%; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[name="your-name"] {
+          width: 90%; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form textarea[name="address"] {
+          width: 100%; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form #availability {
+          margin-top: 10px;
+          /* style the days of the week list */ }
+          #volunteer-interest-form-page .volunteer-interest-form-content .form-container form #availability .checkbox-845 {
+            font-weight: normal !important; }
+            #volunteer-interest-form-page .volunteer-interest-form-content .form-container form #availability .checkbox-845 span {
+              display: flex;
+              flex-flow: row wrap; }
+            #volunteer-interest-form-page .volunteer-interest-form-content .form-container form #availability .checkbox-845 .wpcf7-list-item label {
+              display: flex;
+              font-weight: normal !important;
+              flex-direction: row;
+              justify-content: flex-start;
+              align-items: center;
+              padding: 5px 15px; }
+      #volunteer-interest-form-page .volunteer-interest-form-content .filler-image {
+        background-image: linear-gradient(to left, transparent 0%, transparent 70%, white), linear-gradient(to bottom, transparent 0%, transparent 30%, white), url("img/volunteer-interest-hero.png");
+        background-size: cover;
+        height: 500px;
+        position: absolute;
+        right: 0;
+        width: 40%; }
+
+  /* google maps plugin modifications */
+  .wpgmza-store-locator {
+    display: flex !important;
+    flex-flow: row nowrap !important;
+    justify-content: center;
+    align-items: center; }
+
+  .wpgmza-address-container.wpgmza-form-field.wpgmza_sl_query_div {
+    width: 100%;
+    padding: 5px !important;
+    height: 46px !important; } }
 /* Very Large Desktop Screens */
 @media screen and (min-width: 1500px) {
   #popover .sticky.donation-popover {
     top: 400px; } }
-/* wordpress specific styles */
-.wp-block-video {
-  width: 40% !important;
-  margin: 0 auto;
-  padding: 20px 0px; }
-
-.center-img {
-  margin: 0 auto;
-  padding: 20px 0px; }
-
-.volunteer-luncheon-letters {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px; }
-  .volunteer-luncheon-letters img {
-    width: 30%; }
-
-/* map location descriptions */
-.gmpInfoWindowtitle {
-  font-family: "Poppins", sans-serif;
-  padding: 0px !important; }
-
-.egm-marker-iw {
-  color: #000 !important; }
-  .egm-marker-iw p {
-    color: #000 !important;
-    margin: 0;
-    padding: 5px 0px; }
-
-/* annual report page template */
-#annual-report-page-template {
-  background: #fff;
-  color: #003952; }
-  #annual-report-page-template h1 {
-    background: #a9cf38;
-    color: #003952;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    padding: 10px 0px;
-    margin: 0 auto;
-    width: 100%; }
-    #annual-report-page-template h1 span {
-      color: #003952; }
-  #annual-report-page-template .container-pdf {
-    margin: 25px 0px; }
-  #annual-report-page-template .wp-block-file__button {
-    background: #a9cf38;
-    border-radius: 5px;
-    border-bottom: none;
-    padding: 5px 15px;
-    font-size: 1.25rem;
-    margin: 10px; }
-    #annual-report-page-template .wp-block-file__button:hover {
-      background: #00b5c2;
-      transition: 1s background; }
-    #annual-report-page-template .wp-block-file__button:hover {
-      color: #003952;
-      opacity: 1; }
-
-/* general page template */
-#general-page-template {
-  background: #fff;
-  color: #003952; }
-  #general-page-template h1 {
-    background: #a9cf38;
-    color: #003952;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    padding: 10px 0px;
-    margin: 0 auto;
-    width: 100%; }
-    #general-page-template h1 span {
-      color: #003952; }
-
-/* smart slider */
-#body-adjust {
-  margin-top: 90px; }
-
-#body-adjust-main {
-  margin-top: 70px; }
-
-.adjust-container {
-  margin-top: 70px !important; }
-
-/* slider button */
-div#n2-ss-3 .n2-ss-button-container:hover,
-div#n2-ss-3 .n2-ss-button-container a:hover {
-  background: #00b5c2;
-  border-radius: 5px;
-  transition: 1s background-color; }
-
-/* foobox galleries */
-.foogallery {
-  padding: 40px 0px; }
-
-.foogallery.fg-light .fg-item-inner {
-  border: none !important;
-  background-color: none !important;
-  box-shadow: none !important; }
-
-/* hidden donation page template */
-#hidden-donation-page-template {
-  background: #fff;
-  color: #003952; }
-  #hidden-donation-page-template h1 {
-    background: #a9cf38;
-    color: #003952;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    padding: 10px 0px;
-    margin: 0 auto;
-    width: 100%; }
-    #hidden-donation-page-template h1 span {
-      color: #003952; }
-  #hidden-donation-page-template .donation-page-content-container {
-    margin: 0 auto;
-    padding: 20px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
-    #hidden-donation-page-template .donation-page-content-container img {
-      width: 100%; }
-    #hidden-donation-page-template .donation-page-content-container .donation-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-    #hidden-donation-page-template .donation-page-content-container h2 {
-      font-weight: 400;
-      line-height: 2rem;
-      text-transform: none;
-      padding: 20px 0px; }
-
-/* press release donation page template */
-#press-release-donation-page-template {
-  background: #fff;
-  color: #003952; }
-  #press-release-donation-page-template h1 {
-    background: #a9cf38;
-    color: #003952;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    padding: 10px 0px;
-    margin: 0 auto;
-    width: 100%; }
-    #press-release-donation-page-template h1 span {
-      color: #003952; }
-  #press-release-donation-page-template img {
-    width: 100%; }
-  #press-release-donation-page-template .button-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center; }
-    #press-release-donation-page-template .button-container a:link,
-    #press-release-donation-page-template .button-container a:visited {
-      border-bottom: none;
-      color: #003952;
-      font-family: "Poppins", sans-serif;
-      font-weight: 700;
-      text-decoration: none;
-      text-transform: uppercase; }
-      #press-release-donation-page-template .button-container a:link:hover,
-      #press-release-donation-page-template .button-container a:visited:hover {
-        border-bottom: none; }
-    #press-release-donation-page-template .button-container .rounded-green-button {
-      background: #a9cf38;
-      border-radius: 5px;
-      border-bottom: none;
-      padding: 5px 15px;
-      margin-bottom: 20px; }
-      #press-release-donation-page-template .button-container .rounded-green-button:hover {
-        background: #00b5c2;
-        transition: 1s background; }
-  #press-release-donation-page-template h3 {
-    line-height: 1.5rem;
-    text-transform: none;
-    padding-bottom: 15px; }
-
-/* pop up box */
-#sgpb-popup-dialog-main-div {
-  background-color: #a9cf38 !important;
-  color: #003952; }
-  #sgpb-popup-dialog-main-div .sg-popup-builder-content h1 {
-    line-height: 2rem; }
-  #sgpb-popup-dialog-main-div .sg-popup-builder-content h2 {
-    font-size: 1.75rem;
-    line-height: 1.95rem;
-    text-transform: none; }
-
-.pop-up-button-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center; }
-  .pop-up-button-container a:link,
-  .pop-up-button-container a:visited {
-    border-bottom: none;
-    color: #003952;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    text-decoration: none;
-    text-transform: uppercase; }
-    .pop-up-button-container a:link:hover,
-    .pop-up-button-container a:visited:hover {
-      border-bottom: none; }
-  .pop-up-button-container a:link,
-  .pop-up-button-container a:visited {
-    background: #00b5c2;
-    border: 3px solid #00b5c2;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    padding: 10px 0px; }
-    .pop-up-button-container a:link:hover,
-    .pop-up-button-container a:visited:hover {
-      background-color: transparent !important;
-      border: 3px solid #003952;
-      transition: 1s background-color; }
-
-/* hide popover */
-.hide-popover {
-  display: none !important;
-  visibility: hidden !important; }
-
-/* response to COVID-19 page */
-#covid-response-page {
-  background: #fff;
-  color: #003952; }
-  #covid-response-page h1 {
-    background: #a9cf38;
-    color: #003952;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    padding: 10px 0px;
-    margin: 0 auto;
-    width: 100%; }
-    #covid-response-page h1 span {
-      color: #003952; }
-  #covid-response-page .volunteer-page-opportunities-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    #covid-response-page .volunteer-page-opportunities-container i {
-      background: #003952;
-      color: #a9cf38;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100px;
-      height: 100px;
-      text-align: center;
-      border-radius: 200px;
-      margin: 0 auto; }
-    #covid-response-page .volunteer-page-opportunities-container article {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-      height: 350px; }
-      #covid-response-page .volunteer-page-opportunities-container article h2 {
-        font-size: 2rem;
-        line-height: 2rem; }
-      #covid-response-page .volunteer-page-opportunities-container article h3 {
-        font-size: 2rem;
-        line-height: 2rem;
-        margin: 0px; }
-      #covid-response-page .volunteer-page-opportunities-container article a:link,
-      #covid-response-page .volunteer-page-opportunities-container article a:visited {
-        text-decoration: none; }
-        #covid-response-page .volunteer-page-opportunities-container article a:link:hover,
-        #covid-response-page .volunteer-page-opportunities-container article a:visited:hover {
-          border-bottom: none; }
-    #covid-response-page .volunteer-page-opportunities-container h3 {
-      margin-top: 15px; }
-    #covid-response-page .volunteer-page-opportunities-container aside {
-      padding: 10px 0px;
-      width: 100%; }
-  @media screen and (min-width: 992px) {
-    #covid-response-page .volunteer-page-opportunities-container {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-items: center;
-      padding: 0px; }
-      #covid-response-page .volunteer-page-opportunities-container aside {
-        width: 25%;
-        height: 500px; }
-        #covid-response-page .volunteer-page-opportunities-container aside i {
-          margin-top: 40px; } }
-  #covid-response-page .button-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    width: 50%; }
-    #covid-response-page .button-container a:link,
-    #covid-response-page .button-container a:visited {
-      border-bottom: none;
-      color: #003952;
-      font-family: "Poppins", sans-serif;
-      font-weight: 700;
-      text-decoration: none;
-      text-transform: uppercase; }
-      #covid-response-page .button-container a:link:hover,
-      #covid-response-page .button-container a:visited:hover {
-        border-bottom: none; }
-    #covid-response-page .button-container .rounded-green-button {
-      background: #a9cf38;
-      border-radius: 5px;
-      border-bottom: none;
-      padding: 5px 15px; }
-      #covid-response-page .button-container .rounded-green-button:hover {
-        background: #00b5c2;
-        transition: 1s background; }
-    #covid-response-page .button-container .rounded-blue-button {
-      background: #00b5c2;
-      border-radius: 5px;
-      padding: 5px 15px;
-      margin-bottom: 20px; }
-      #covid-response-page .button-container .rounded-blue-button:hover {
-        background: #a9cf38;
-        transition: 1s background; }
-  #covid-response-page .covid-response-map {
-    width: 100%; }
-
-/* google translate plugin */
-#translate-option {
-  background: #00b5c2 !important; }
-
-.translate-section {
-  z-index: 9999;
-  position: fixed;
-  bottom: 0px;
-  left: 0;
-  padding: 3px;
-  border-radius: 0px 5px 0px 0px; }
-
 /*
   * Hide only visually, but have it available for screen readers:
   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility

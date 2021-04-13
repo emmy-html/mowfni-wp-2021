@@ -34,7 +34,7 @@
         </article>
         <article class="image-footer-logo">
           <div class="content-wrapper">
-            <img src="<?php bloginfo('template_url'); ?>/img/MOW_america_member.png" alt="Meals On Wheels America Member 2020" />
+            <img src="<?php bloginfo('template_url'); ?>/img/MOW_america_member_2021.png" alt="Meals On Wheels America Member 2021" />
           </div>
         </article>
       </div>
