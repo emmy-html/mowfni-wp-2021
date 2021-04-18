@@ -59,3 +59,6 @@ function closeTopbar() {
       document.getElementById("defaultTab").click();
     }
   }
+  document.addEventListener( 'wpcf7mailsent', function( event ) {
+    location = 'https://mowfni.org/successfully-sent/';
+  }, false );

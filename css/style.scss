@@ -2562,23 +2562,20 @@ div.pac-container.pac-logo{ /* make sure search results come up directly below i
     background: #fff;
     color: $dark-blue;
     width: 100%;
+    /* search & reset buttons */
     button,
     input[type="button"] {
-      background: $dark-blue;
+      background: none;
       border: none;
-      color: $lime-green;
+      color: $dark-blue;
       font-family: $heading-font;
       font-weight: bold;
       outline: none;
-      padding: 7px;
-      height: 30px;
       text-transform: uppercase;
       i {
         color: $lime-green;
       }
       &:hover {
-        background: $lime-green;
-        color: $dark-blue;
         cursor: pointer;
         transition: .3s all;
       }
@@ -2586,7 +2583,26 @@ div.pac-container.pac-logo{ /* make sure search results come up directly below i
     .wpgmza-search,
     .wpgmza-radius,
     .wpgmza-reset {
-      width: 95px;
+      margin: 0px 5px !important;
+    }
+    .wpgmza-search,
+    .wpgmza-reset {
+      border-radius: 20px;
+      &:hover {
+        transition: .3s all;
+      }
+    }
+    .wpgmza-search {
+      background: $lime-green;
+      &:hover {
+        background: $light-blue;
+      }
+    }
+    .wpgmza-reset {
+      background: $light-blue;
+      &:hover {
+        background: $lime-green;
+      }
     }
     select.wpgmza-radius {
       border: 2px solid $dark-blue;
@@ -3846,8 +3862,9 @@ div#n2-ss-3 .n2-ss-button-container a {
     .wpgmza-store-locator {
       display: flex !important;
       flex-flow: row nowrap !important;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+      width: 100%;
     }
     .wpgmza-address-container.wpgmza-form-field.wpgmza_sl_query_div {
       width: 100%;

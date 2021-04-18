@@ -4120,32 +4120,43 @@ input.wpgmza-address {
   background: #fff;
   color: #003952;
   width: 100%;
+  /* search & reset buttons */
   /* hide labels */
   /* hide use my location feature */ }
   .wpgmza-store-locator button,
   .wpgmza-store-locator input[type="button"] {
-    background: #003952;
+    background: none;
     border: none;
-    color: #a9cf38;
+    color: #003952;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     outline: none;
-    padding: 7px;
-    height: 30px;
     text-transform: uppercase; }
     .wpgmza-store-locator button i,
     .wpgmza-store-locator input[type="button"] i {
       color: #a9cf38; }
     .wpgmza-store-locator button:hover,
     .wpgmza-store-locator input[type="button"]:hover {
-      background: #a9cf38;
-      color: #003952;
       cursor: pointer;
       transition: .3s all; }
   .wpgmza-store-locator .wpgmza-search,
   .wpgmza-store-locator .wpgmza-radius,
   .wpgmza-store-locator .wpgmza-reset {
-    width: 95px; }
+    margin: 0px 5px !important; }
+  .wpgmza-store-locator .wpgmza-search,
+  .wpgmza-store-locator .wpgmza-reset {
+    border-radius: 20px; }
+    .wpgmza-store-locator .wpgmza-search:hover,
+    .wpgmza-store-locator .wpgmza-reset:hover {
+      transition: .3s all; }
+  .wpgmza-store-locator .wpgmza-search {
+    background: #a9cf38; }
+    .wpgmza-store-locator .wpgmza-search:hover {
+      background: #00b5c2; }
+  .wpgmza-store-locator .wpgmza-reset {
+    background: #00b5c2; }
+    .wpgmza-store-locator .wpgmza-reset:hover {
+      background: #a9cf38; }
   .wpgmza-store-locator select.wpgmza-radius {
     border: 2px solid #003952;
     background: white; }
@@ -5280,8 +5291,9 @@ div#n2-ss-3 .n2-ss-button-container a:hover {
   .wpgmza-store-locator {
     display: flex !important;
     flex-flow: row nowrap !important;
-    justify-content: center;
-    align-items: center; }
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
 
   .wpgmza-address-container.wpgmza-form-field.wpgmza_sl_query_div {
     width: 100%;
