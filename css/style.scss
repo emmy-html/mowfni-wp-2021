@@ -2562,6 +2562,7 @@ div.pac-container.pac-logo{ /* make sure search results come up directly below i
     background: #fff;
     color: $dark-blue;
     width: 100%;
+    height: 100px;
     /* search & reset buttons */
     button,
     input[type="button"] {
@@ -2615,6 +2616,9 @@ div.pac-container.pac-logo{ /* make sure search results come up directly below i
     /* hide use my location feature */ 
     button.wpgmza-use-my-location {
       display: none !important;
+    }
+    .wpgmza-radius-container {
+      margin-top: 10px !important;
     }
   }
 /* annual report page template */
@@ -2790,6 +2794,239 @@ div#n2-ss-3 .n2-ss-button-container a {
   left: 0;
   padding: 3px;
   border-radius: 0px 5px 0px 0px;
+}
+/* pick up meals landing pages */ 
+#pick-up-landing-pages {
+  @include page-header;
+  .landing-page-info {
+    background: #fff;
+    color: $dark-blue;
+    display: flex;
+    flex-direction: column;
+    aside {
+      padding: 10px 0px;
+      p {
+        text-align: justify;
+      }
+      &:nth-of-type(1) {
+        background-image: linear-gradient(
+          to bottom,
+          transparent 0%,
+          transparent 60%,
+          rgba(255, 255, 255, 1)
+        ), url('img/landing-page-hero.png');
+        background-size: cover;
+        background-position: center;
+        height: 250px;
+      }
+    }
+  }
+  .about-mow-page-programs-application {
+    @include fontawesome-icon;
+    @include secondary-page-header;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+    p {
+      margin: 0;
+      padding: 0px 20px;
+      text-align: justify;
+    }
+    .ccu-info {
+      color: $dark-blue;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0px;
+      img {
+        width: 100%;
+        margin: 0 auto;
+      }
+      p {
+        padding: 0px;
+      }
+    }
+    .button-container {
+      width: 300px;
+      margin: 0 auto;
+      .rounded-green-button {
+        @include body-green-button;
+      }
+    }
+  }
+  .pick-up-landing-pages-form {
+    background: #fff;
+    color: $dark-blue;
+    h3 {
+      padding: 10px 0px;
+      padding-top: 10px !important;
+    }
+    .pick-up-form-container {
+      background: #fff;
+      width: 100%;
+      #pick-up-form {
+        p {
+          margin: 0px !important;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          label {
+            font-family: $heading-font;
+            font-weight: 600;
+            text-transform: uppercase;
+          }
+          input, textarea {
+            border: 2px solid $dark-blue;
+            width: 100%;
+            margin: 5px 0px;
+            &:hover {
+              border: 2px solid $lime-green;
+              transition: .3s border;
+            }
+          }
+          textarea[name="address"] {
+            height: 70px;
+          }
+          textarea[name="DOB"],
+          textarea[name="phone-number"] {
+            height: 20px;
+          }
+          input[type="submit"] {
+            background: $dark-blue;
+            border: none;
+            color: $lime-green;
+            font-family: $heading-font;
+            font-weight: 600;
+            padding: 10px;
+            text-transform: uppercase;
+            width: 101%;
+            &:hover {
+              background: $lime-green;
+              color: $dark-blue;
+              cursor: pointer;
+              transition: .3s all;
+            }
+          }
+        }
+      }
+      h3 {
+        padding-top: 50px;
+      }
+    }
+    .about-mow-page-programs {
+      @include secondary-page-header;
+      h1 {
+        background: $dark-blue;
+        color: #fff;
+      }
+      display: flex;
+      flex-direction: column;
+      .about-mow-page-programs-span {
+        @include fontawesome-icon;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 30px 0px;
+        &:nth-of-type(even) {
+          background: $light-blue;
+        }
+        p {
+          margin: 0;
+          padding: 0px 20px;
+          text-align: justify;
+        }
+        .ccu-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 10px 0px;
+          img {
+            width: 100%;
+            margin: 0 auto;
+          }
+          p {
+            padding: 0px;
+          }
+        }
+        .button-container {
+          width: 300px;
+          margin: 0 auto;
+          .rounded-green-button {
+            @include body-green-button;
+          }
+        }
+      }
+    }
+    .map-locations {
+      p {
+        text-align: justify;
+      }
+      .map-locations-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 20px;
+        aside {
+          width: 100%;
+          padding-bottom: 25px;
+          .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            div {
+              width: 100%;
+            }
+            .location-more-info {
+              font-size: 0.8rem;
+              i.fas.fa-location-arrow {
+                font-size: 0.55rem;
+              }
+              a {
+                margin-right: 3px;
+              }
+              i {
+                margin: 0px 2.5px;
+              }
+            }
+          }
+          h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            line-height: 1.25rem;
+            margin: 0;
+            span {
+              display: block;
+              font-weight: 300;
+              line-height: 1.2rem;
+              text-transform: none;
+            }
+          }
+          .pick-up-time {
+            padding-bottom: 10px;
+          }
+          p {
+            line-height: 1.25rem;
+            margin: 0;
+            padding-bottom: 10px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 }
 /* Large Tablets & Desktop Styles */
 @media screen and (min-width: 992px) {
@@ -3865,11 +4102,152 @@ div#n2-ss-3 .n2-ss-button-container a {
       justify-content: space-between;
       align-items: center;
       width: 100%;
+      height: 60px !important;
+      .wpgmza-radius-container {
+        margin-top: 0px !important;
+      }
     }
     .wpgmza-address-container.wpgmza-form-field.wpgmza_sl_query_div {
       width: 100%;
       padding: 5px !important;
       height: 46px !important;
+    }
+    /* pick up meals landing pages */ 
+    #pick-up-landing-pages {
+      .landing-page-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        aside:nth-of-type(1) {
+          background-image: linear-gradient(
+            to right,
+            transparent 0%,
+            transparent 60%,
+            rgba(255, 255, 255, 1)
+          ),
+          linear-gradient(
+            to bottom,
+            transparent 0%,
+            transparent 60%,
+            rgba(255, 255, 255, 1)
+          ), url('img/landing-page-hero.png');
+          background-size: cover;
+          background-position: center;
+          height: 300px;
+          width: 30%;
+        }
+        aside:nth-of-type(2) {
+          width: 30%;
+        }
+        aside:nth-of-type(3) {
+          width: 40%;
+        }
+      }
+      .about-mow-page-programs-application {
+        .ccu-info {
+          img {
+            width: 90%;
+          }
+          display: flex;
+          flex-direction: row;
+        }
+      }
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: $dark-blue;
+      }
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: $light-blue;
+      }
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: $lime-green;
+      }
+      .pick-up-landing-pages-form {
+        display: flex;
+        flex-flow: row-reverse wrap;
+        justify-content: center;
+        .pick-up-form-container {
+          width: 55%;
+          height: 656px;
+          h3 {
+            padding-top: 30px !important;
+          }
+        }
+        .map-locations {
+          width: 45%;
+          height: 656px;
+          overflow-y: scroll;
+          overflow-x: hidden;
+          .map-locations-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            aside {
+              width: 100%;
+              .content-wrapper {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-between;
+                text-align: center;
+                div:nth-of-type(1) {
+                  width: 45%;
+                }
+                div:nth-of-type(2) {
+                  width: 25%;
+                }
+                div:nth-of-type(3) {
+                  width: 25%;
+                }
+              }
+            }
+          }
+        }
+        .about-mow-page-programs {
+          display: flex;
+          flex-flow: row wrap;
+          .about-mow-page-programs-span {
+            justify-content: stretch;
+            align-items: stretch;
+            h2 {
+              font-size: 2rem;
+              line-height: 2rem;
+              span {
+                display: block;
+              }
+            }
+            p {
+              padding: 0px 100px;
+            }
+            &:nth-of-type(1) {
+              background: $lime-green;
+              flex-basis: 50%;
+            }
+            &:nth-of-type(2) {
+              flex-basis: 50%;
+            }
+            &:nth-of-type(3) {
+              background: #fff;
+              flex-basis: 100%;
+            }
+            .ccu-info {
+              img {
+                width: 90%;
+              }
+              display: flex;
+              flex-direction: row;
+            }
+          }
+        }
+      }
     }
   }
 /* Very Large Desktop Screens */
