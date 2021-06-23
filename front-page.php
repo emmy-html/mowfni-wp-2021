@@ -26,7 +26,7 @@ echo do_shortcode('[smartslider3 slider="3"]');
           </article>
           <article>
             <h2>
-              86,000
+              830,000
               <span>Emergency Meals Delivered</span>
             </h2>
           </article>

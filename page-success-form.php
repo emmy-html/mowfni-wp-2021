@@ -1,6 +1,6 @@
 <?php /* Template Name: Successful Volunteer Interest Check Submission */ ?>
 
-<?php get_header(); ?>
+<?php get_header('success'); ?>
 
 <main id="content">
 <section id="general-page-template">

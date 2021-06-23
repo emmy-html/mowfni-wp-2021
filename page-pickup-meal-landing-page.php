@@ -3,11 +3,9 @@
 <?php get_header(); ?>
 
 <main id="content">
-<section id="about-mow-page-hero">
-
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<h1><?php the_title(); ?></h1>
 <section id="pick-up-landing-pages">
+  <h1><?php the_title(); ?></h1>
             <div class="landing-page-info">
               <aside>
                 &nbsp;
@@ -46,7 +44,7 @@
                 <article class="map-locations">
                     <div class="map-locations-container">
                       <div class="content-wrapper">
-                        <h3>Find A Café In The Surrounding Cook County Area</h3>
+                        <h3>Find A Café In The Surrounding <?php the_field('county_name') ?> Area</h3>
                       </div>
                     <?php 
                     $tag_name = get_field('tag_name');

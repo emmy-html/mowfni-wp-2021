@@ -3980,18 +3980,23 @@ footer {
         #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="text"],
         #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="email"],
         #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="date"],
-        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form textarea[name="address"] {
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form textarea[name="address"],
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form textarea#custom_text_area___e00475a1d8b7a159c46a6c2816df5ec1_0 {
           border: 3px solid #003952;
           width: 96%;
           margin-top: 5px !important; }
           #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="text"]:hover,
           #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="email"]:hover,
           #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="date"]:hover,
-          #volunteer-interest-form-page .volunteer-interest-form-content .form-container form textarea[name="address"]:hover {
+          #volunteer-interest-form-page .volunteer-interest-form-content .form-container form textarea[name="address"]:hover,
+          #volunteer-interest-form-page .volunteer-interest-form-content .form-container form textarea#custom_text_area___e00475a1d8b7a159c46a6c2816df5ec1_0:hover {
             border: 3px solid #a9cf38;
             transition: .3s border; }
         #volunteer-interest-form-page .volunteer-interest-form-content .form-container form textarea[name="address"] {
           height: 60px; }
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form textarea#custom_text_area___e00475a1d8b7a159c46a6c2816df5ec1_0 {
+          width: 100% !important;
+          height: 200px; }
         #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="submit"] {
           background: #a9cf38;
           border: none;
@@ -4489,6 +4494,8 @@ div#n2-ss-3 .n2-ss-button-container a:hover {
   width: 100%; }
   #pick-up-landing-pages h1 span {
     color: #003952; }
+#pick-up-landing-pages h1 {
+  padding-top: 20px !important; }
 #pick-up-landing-pages .landing-page-info {
   background: #fff;
   color: #003952;
@@ -5077,7 +5084,7 @@ div#n2-ss-3 .n2-ss-button-container a:hover {
     flex-direction: row;
     align-items: flex-end; }
     #volunteer-page-locations .volunteer-page-service-area .volunteer-page-locations-container {
-      padding: 20px;
+      padding: 60px;
       width: 100%; }
 
   /* Get Involved Page */

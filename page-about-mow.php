@@ -70,7 +70,9 @@
                         <span><?php the_field('location_manager'); ?></span>
                         <?php endif; ?> 
                         <?php if( get_field('phone_number') ): ?>
-                        <span><?php the_field('phone_number'); ?></span>
+                          <span>
+                              <a href="tel:<?php the_field('phone_number_stripped'); ?>"><?php the_field('phone_number'); ?></a>
+                          </span>
                         <?php endif; ?>
                         </h3>
                         </div>

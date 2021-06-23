@@ -35,7 +35,9 @@
                             <p><?php the_field('manager_name'); ?></p>
                         <?php endif; ?>
                         <?php if (get_field('phone_number')) : ?>
-                            <p><?php the_field('phone_number'); ?></p>
+                            <p>
+                                <a href="tel:<?php the_field('phone_number_stripped'); ?>"><?php the_field('phone_number'); ?></a>
+                            </p>
                         <?php endif; ?>
                     </aside>
                 </div>
@@ -73,14 +75,14 @@
                 </div>
             </article>
             <?php if (get_field('menu')) : ?>
-            <article>
-                <h2>Menu</h2>
-                <i class="fas fa-utensils fa-3x"></i>
-                <p>Each meal comes with protein, vegetables, fruit, grain, and milk. The menus have been approved by a Registered Dietitian to meet 1/3 of your daily recommended intake of nutrients.</p>
-                <div class="button-container">
+                <article>
+                    <h2>Menu</h2>
+                    <i class="fas fa-utensils fa-3x"></i>
+                    <p>Each meal comes with protein, vegetables, fruit, grain, and milk. The menus have been approved by a Registered Dietitian to meet 1/3 of your daily recommended intake of nutrients.</p>
+                    <div class="button-container">
                         <a href="<?php the_field('menu'); ?>" target="_blank" class="rounded-blue-button">View Our Menu &#8250;</a>
-                </div>
-            </article>
+                    </div>
+                </article>
             <?php endif; ?>
         </div>
     </section>

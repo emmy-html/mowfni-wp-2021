@@ -20,7 +20,7 @@
                 </a>
             </article>
             <article>
-                <a href="#volunteer-page-corporate">
+                <a href="http://corporate.mowfni.org/" target="_blank">
                     <h2>Corporate &amp; Organzations</h2>
                     <h3>Volunteering</h3>
                 </a>
@@ -72,29 +72,8 @@
         <h1>Our Service Area</h1>
         <div class="volunteer-page-service-area">
             <article class="volunteer-page-locations-container">
-                <?php echo do_shortcode('[google_map_easy id="1"]')?>
+                <?php echo do_shortcode('[wpgmza id="37"]')?>
             </article>
-        </div>
-    </section>
-    <section id="volunteer-page-corporate">
-        <h1>Corporate &amp; Organizations Volunteer Oppportunities</h1>
-        <div class="volunteer-page-corporate-container">
-            <aside>
-                <div class="content-wrapper">
-                    <ul>
-                        <li>Meal Delivery Drivers -- Monday thru Friday mornings.</li>
-                        <li>Check-In Callers (Remote Opportunity) -- Monday thru Friday between 10am and 6pm</li>
-                        <li>Greeting Card Artists (Remote Opportunity) – Any day or time, it’s your choice!</li>
-                        <li>Design your project – Our Meals on Wheels Volunteer Team will work with your corporate or
-                            organizational team to create an impactful volunteer opportunity that will brighten a
-                            senior’s day. Making blankets, creating senior care bags, helping with yard clean-up, or
-                            making greeting cards a re just some of the ways you can bring a smile to our isolated
-                            seniors. Please contact us to learn how you can make a difference in your community. Email
-                            the Volunteer Department at <a href="mailto:volunteer@cnnssa.org">volunteer@cnnssa.org</a>
-                            or call <a href="tel:1-312-207-5290">312-207-5290</a>. Thank you!</li>
-                    </ul>
-                </div>
-            </aside>
         </div>
     </section>
     <section id="volunteer-page-cta">
