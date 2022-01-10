@@ -3071,6 +3071,72 @@ footer {
         opacity: 0.75;
         transition: 1s opacity; }
 
+.about-mow-page-programs-header {
+  color: #003952;
+  display: flex;
+  flex-direction: column; }
+  .about-mow-page-programs-header h2 {
+    color: #003952;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    padding: 15px 0px; }
+    .about-mow-page-programs-header h2 span {
+      display: block; }
+  @media screen and (min-width: 992px) {
+    .about-mow-page-programs-header h2 span {
+      display: inline-block; } }
+  .about-mow-page-programs-header h1 {
+    background: #003952;
+    color: #fff; }
+  .about-mow-page-programs-header .about-mow-page-programs-span {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0px; }
+    .about-mow-page-programs-header .about-mow-page-programs-span i {
+      background: #003952;
+      color: #a9cf38;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      border-radius: 200px;
+      margin: 0 auto; }
+    .about-mow-page-programs-header .about-mow-page-programs-span:nth-of-type(even) {
+      background: #00b5c2; }
+    .about-mow-page-programs-header .about-mow-page-programs-span p {
+      margin: 0;
+      padding: 0px 20px;
+      text-align: justify; }
+    .about-mow-page-programs-header .about-mow-page-programs-span .ccu-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0px; }
+      .about-mow-page-programs-header .about-mow-page-programs-span .ccu-info img {
+        width: 100%;
+        margin: 0 auto; }
+      .about-mow-page-programs-header .about-mow-page-programs-span .ccu-info p {
+        padding: 0px; }
+    .about-mow-page-programs-header .about-mow-page-programs-span .button-container {
+      width: 300px;
+      margin: 0 auto; }
+      .about-mow-page-programs-header .about-mow-page-programs-span .button-container .rounded-green-button {
+        background: #a9cf38;
+        border-radius: 5px;
+        border-bottom: none;
+        padding: 5px 15px; }
+        .about-mow-page-programs-header .about-mow-page-programs-span .button-container .rounded-green-button:hover {
+          background: #00b5c2;
+          transition: 1s background; }
+
 /* About Meals On Wheels Page */
 #about-mow-page-hero h1 {
   background: #a9cf38;
@@ -3415,6 +3481,9 @@ footer {
       text-align: left; }
       #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-meal-pickup h3:nth-of-type(1) {
         padding-top: 20px; }
+    #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-meal-pickup h3.pick-up-time {
+      font-size: 1.25rem !important;
+      line-height: 1.2rem; }
     #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-meal-pickup p {
       margin: 0;
       padding: 0px 20px; }
@@ -3978,6 +4047,7 @@ footer {
       #volunteer-interest-form-page .volunteer-interest-form-content .form-container form {
         /* style the checkbox next to the label */ }
         #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="text"],
+        #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="tel"],
         #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="email"],
         #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="date"],
         #volunteer-interest-form-page .volunteer-interest-form-content .form-container form textarea[name="address"],
@@ -3986,6 +4056,7 @@ footer {
           width: 96%;
           margin-top: 5px !important; }
           #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="text"]:hover,
+          #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="tel"]:hover,
           #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="email"]:hover,
           #volunteer-interest-form-page .volunteer-interest-form-content .form-container form input[type="date"]:hover,
           #volunteer-interest-form-page .volunteer-interest-form-content .form-container form textarea[name="address"]:hover,
@@ -4722,6 +4793,291 @@ div#n2-ss-3 .n2-ss-button-container a:hover {
         padding-bottom: 10px;
         text-align: center; }
 
+/* corporate sponsorships page */
+#corporate-sponsorships-page {
+  background: #fff;
+  color: #003952;
+  /* slideshow */ }
+  #corporate-sponsorships-page h1 {
+    background: #a9cf38;
+    color: #003952;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 10px 0px;
+    margin: 0 auto;
+    width: 100%; }
+    #corporate-sponsorships-page h1 span {
+      color: #003952; }
+  #corporate-sponsorships-page .corporate-sponsorships-page-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  #corporate-sponsorships-page .single-sponsor-container {
+    /* controls for slideshow */ }
+    #corporate-sponsorships-page .single-sponsor-container #slides {
+      position: relative;
+      height: 100%;
+      min-height: 450px;
+      padding: 0px;
+      margin: 0px;
+      list-style-type: none; }
+    #corporate-sponsorships-page .single-sponsor-container .slide {
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      width: 70%;
+      height: 100%;
+      opacity: 0;
+      z-index: 1;
+      -webkit-transition: opacity 1s;
+      -moz-transition: opacity 1s;
+      -o-transition: opacity 1s;
+      transition: opacity 1s; }
+      #corporate-sponsorships-page .single-sponsor-container .slide .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #corporate-sponsorships-page .single-sponsor-container .slide .content-wrapper h2 {
+          font-weight: 600; }
+        #corporate-sponsorships-page .single-sponsor-container .slide .content-wrapper img.sponsor-logo {
+          width: 150px !important;
+          height: auto;
+          margin: 0 auto !important;
+          padding: 10px 0px; }
+        #corporate-sponsorships-page .single-sponsor-container .slide .content-wrapper .button-container {
+          margin: 0 auto;
+          padding: 10px 0px; }
+        #corporate-sponsorships-page .single-sponsor-container .slide .content-wrapper .body-green-button {
+          background: #a9cf38;
+          border-radius: 5px;
+          border-bottom: none;
+          padding: 5px 15px;
+          font-family: "Poppins", sans-serif;
+          text-align: center;
+          text-transform: uppercase; }
+          #corporate-sponsorships-page .single-sponsor-container .slide .content-wrapper .body-green-button:hover {
+            background: #00b5c2;
+            transition: 1s background; }
+    #corporate-sponsorships-page .single-sponsor-container .showing {
+      opacity: 1;
+      z-index: 2; }
+    #corporate-sponsorships-page .single-sponsor-container .controls {
+      background: #a9cf38;
+      border: none;
+      color: #003952;
+      position: absolute;
+      top: 35% !important; }
+      #corporate-sponsorships-page .single-sponsor-container .controls:hover {
+        background: #003952;
+        color: #a9cf38;
+        cursor: pointer;
+        transition: .3s all; }
+    #corporate-sponsorships-page .single-sponsor-container #previous {
+      border-radius: 5px;
+      left: 0;
+      padding: 10px; }
+    #corporate-sponsorships-page .single-sponsor-container #pause {
+      border-radius: 5px;
+      left: 50%;
+      padding: 10px;
+      top: 90% !important; }
+    #corporate-sponsorships-page .single-sponsor-container #next {
+      border-radius: 5px;
+      padding: 10px;
+      right: 0; }
+
+/* individual newsletter / blog post */
+.single-newsletter-post {
+  background: white;
+  color: #003952; }
+  .single-newsletter-post h1 {
+    background: #a9cf38;
+    color: #003952;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 10px 0px;
+    margin: 0 auto;
+    width: 100%; }
+    .single-newsletter-post h1 span {
+      color: #003952; }
+  .single-newsletter-post img.single-newsletter-post-featured-img {
+    width: 100%;
+    height: 250px;
+    padding: 10px 0px;
+    object-fit: cover; }
+  .single-newsletter-post .single-newsletter-title {
+    background: none;
+    text-align: left;
+    text-transform: none; }
+  .single-newsletter-post .single-newsletter-date {
+    text-align: left;
+    text-transform: none; }
+  .single-newsletter-post .single-newsletter-share,
+  .single-newsletter-post .single-newsletter-view-all,
+  .single-newsletter-post .single-newsletter-signup {
+    padding: 25px 30px;
+    margin-bottom: 30px; }
+    .single-newsletter-post .single-newsletter-share h3,
+    .single-newsletter-post .single-newsletter-view-all h3,
+    .single-newsletter-post .single-newsletter-signup h3 {
+      padding-bottom: 15px;
+      text-align: left; }
+  .single-newsletter-post .newsletter-view-all-container {
+    background: #00b5c2;
+    width: 80%;
+    padding: 20px; }
+    .single-newsletter-post .newsletter-view-all-container a:link,
+    .single-newsletter-post .newsletter-view-all-container a:visited {
+      border-bottom: none;
+      font-family: "Poppins", sans-serif;
+      font-size: .9rem;
+      font-weight: 600;
+      text-transform: uppercase; }
+    .single-newsletter-post .newsletter-view-all-container:hover {
+      background: #ffffff;
+      cursor: pointer;
+      transition: .3s all; }
+  .single-newsletter-post .single-newsletter-share {
+    background: #e6e7e8; }
+    .single-newsletter-post .single-newsletter-share a:link,
+    .single-newsletter-post .single-newsletter-share a:visited {
+      border-bottom: none !important;
+      padding: 0px !important;
+      margin-right: 10px; }
+  .single-newsletter-post .single-newsletter-view-all {
+    background: #a9cf38; }
+  .single-newsletter-post .single-newsletter-signup {
+    background: #003952;
+    color: #ffffff; }
+    .single-newsletter-post .single-newsletter-signup .ctct-inline-form,
+    .single-newsletter-post .single-newsletter-signup .ctct-form-container,
+    .single-newsletter-post .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-defaults {
+      font-family: "Poppins", sans-serif !important;
+      background: #003952;
+      color: #ffffff; }
+    .single-newsletter-post .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-defaults .ctct-form-header {
+      display: none; }
+    .single-newsletter-post .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-defaults .ctct-form-text,
+    .single-newsletter-post .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-custom .ctct-form-label,
+    .single-newsletter-post .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-defaults .ctct-gdpr-text {
+      color: #ffffff;
+      font-family: "Poppins", sans-serif; }
+    .single-newsletter-post .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-defaults .ctct-gdpr-text a:link,
+    .single-newsletter-post .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-defaults .ctct-gdpr-text a:visited {
+      color: #00b5c2; }
+    .single-newsletter-post .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-custom .ctct-form-button {
+      background-color: #a9cf38;
+      border: 1px solid #a9cf38;
+      color: #003952;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      text-transform: uppercase; }
+      .single-newsletter-post .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-custom .ctct-form-button:hover {
+        background: #00b5c2;
+        border: 1px solid #00b5c2;
+        transition: .3s background; }
+
+/* newsletter landing page */
+.featured-news-page .single-newsletter-signup .ctct-inline-form, .featured-news-page .single-newsletter-signup .ctct-form-container, .featured-news-page .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-defaults {
+  padding: 0px !important; }
+
+.featured-news-page {
+  background: #ffffff;
+  color: #003952; }
+  .featured-news-page h1 {
+    background: #a9cf38;
+    color: #003952;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 10px 0px;
+    margin: 0 auto;
+    width: 100%; }
+    .featured-news-page h1 span {
+      color: #003952; }
+  .featured-news-page .featured-news-article {
+    background: #e6e7e8; }
+    .featured-news-page .featured-news-article:nth-of-type(1) {
+      margin-bottom: 20px; }
+    .featured-news-page .featured-news-article :not(:nth-of-type(1)) {
+      margin: 20px 0px; }
+    .featured-news-page .featured-news-article img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover; }
+    .featured-news-page .featured-news-article h3 {
+      margin: 10px 0px; }
+    .featured-news-page .featured-news-article p {
+      padding: 10px 0px; }
+  .featured-news-page .single-newsletter-share,
+  .featured-news-page .single-newsletter-view-all,
+  .featured-news-page .single-newsletter-signup {
+    padding: 25px 30px;
+    margin-bottom: 30px; }
+    .featured-news-page .single-newsletter-share h3,
+    .featured-news-page .single-newsletter-view-all h3,
+    .featured-news-page .single-newsletter-signup h3 {
+      padding-bottom: 15px;
+      text-align: left; }
+  .featured-news-page .newsletter-view-all-container {
+    background: #00b5c2;
+    width: 80%;
+    padding: 20px; }
+    .featured-news-page .newsletter-view-all-container a:link,
+    .featured-news-page .newsletter-view-all-container a:visited {
+      border-bottom: none;
+      font-family: "Poppins", sans-serif;
+      font-size: .9rem;
+      font-weight: 600;
+      text-transform: uppercase; }
+    .featured-news-page .newsletter-view-all-container:hover {
+      background: #ffffff;
+      cursor: pointer;
+      transition: .3s all; }
+  .featured-news-page .single-newsletter-share {
+    background: #e6e7e8; }
+    .featured-news-page .single-newsletter-share a:link,
+    .featured-news-page .single-newsletter-share a:visited {
+      border-bottom: none !important;
+      padding: 0px !important;
+      margin-right: 10px; }
+  .featured-news-page .single-newsletter-view-all {
+    background: #a9cf38; }
+  .featured-news-page .single-newsletter-signup {
+    background: #003952;
+    color: #ffffff; }
+    .featured-news-page .single-newsletter-signup .ctct-inline-form,
+    .featured-news-page .single-newsletter-signup .ctct-form-container,
+    .featured-news-page .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-defaults {
+      font-family: "Poppins", sans-serif !important;
+      background: #003952;
+      color: #ffffff; }
+    .featured-news-page .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-defaults .ctct-form-header {
+      display: none; }
+    .featured-news-page .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-defaults .ctct-form-text,
+    .featured-news-page .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-custom .ctct-form-label,
+    .featured-news-page .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-defaults .ctct-gdpr-text {
+      color: #ffffff;
+      font-family: "Poppins", sans-serif; }
+    .featured-news-page .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-defaults .ctct-gdpr-text a:link,
+    .featured-news-page .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-defaults .ctct-gdpr-text a:visited {
+      color: #00b5c2; }
+    .featured-news-page .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-custom .ctct-form-button {
+      background-color: #a9cf38;
+      border: 1px solid #a9cf38;
+      color: #003952;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      text-transform: uppercase; }
+      .featured-news-page .single-newsletter-signup .ctct-form-embed.form_0 .ctct-form-custom .ctct-form-button:hover {
+        background: #00b5c2;
+        border: 1px solid #00b5c2;
+        transition: .3s background; }
+
 /* Large Tablets & Desktop Styles */
 @media screen and (min-width: 992px) {
   /* Universal Styles */
@@ -5183,6 +5539,36 @@ div#n2-ss-3 .n2-ss-button-container a:hover {
             #about-mow-page-locations .about-mow-page-locations-content .about-mow-page-programs .about-mow-page-programs-span .ccu-info img {
               width: 90%; }
 
+  .about-mow-page-programs-header {
+    display: flex;
+    flex-flow: row wrap; }
+    .about-mow-page-programs-header .about-mow-page-programs-span {
+      justify-content: stretch;
+      align-items: stretch; }
+      .about-mow-page-programs-header .about-mow-page-programs-span h2 {
+        font-size: 2rem;
+        line-height: 2rem; }
+        .about-mow-page-programs-header .about-mow-page-programs-span h2 span {
+          display: block; }
+      .about-mow-page-programs-header .about-mow-page-programs-span p {
+        padding: 0px 100px; }
+      .about-mow-page-programs-header .about-mow-page-programs-span:nth-of-type(1) {
+        background: #a9cf38;
+        flex-basis: 50%; }
+      .about-mow-page-programs-header .about-mow-page-programs-span:nth-of-type(2) {
+        flex-basis: 50%; }
+      .about-mow-page-programs-header .about-mow-page-programs-span:nth-of-type(3) {
+        background: #fff;
+        flex-basis: 100%; }
+      .about-mow-page-programs-header .about-mow-page-programs-span .ccu-info {
+        display: flex;
+        flex-direction: row; }
+        .about-mow-page-programs-header .about-mow-page-programs-span .ccu-info img {
+          width: 90%; }
+
+  .about-mow-page-programs.mow-page {
+    display: inline !important; }
+
   /* About MOW Page Volunteer Section */
   #about-mow-page-volunteer .about-mow-page-volunteer-container {
     display: flex;
@@ -5205,6 +5591,11 @@ div#n2-ss-3 .n2-ss-button-container a:hover {
       width: 70%; }
     #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-meal-pickup {
       width: 30%; }
+    #single-mow-location-page .single-mow-location-page-content aside.multi-pickup-container {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: flex-start; }
 
   /* Single MOW Location Page Additional Info Section */
   #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container {
@@ -5224,12 +5615,14 @@ div#n2-ss-3 .n2-ss-button-container a:hover {
         #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container article .ccu-info img {
           width: 90%; }
 
-  #annual-report-page-template .annual-report-page-container {
+  #annual-report-page-template .annual-report-page {
     display: flex;
+    flex-flow: row nowrap;
     align-items: flex-start;
-    justify-content: center; }
-    #annual-report-page-template .annual-report-page-container aside {
-      margin: 160px 0px 0px 30px; }
+    justify-content: space-around;
+    padding: 30px;
+    width: 80%;
+    margin: 0 auto; }
 
   #suggestion-box-popover {
     padding: 0px !important;
@@ -5642,7 +6035,98 @@ div#n2-ss-3 .n2-ss-button-container a:hover {
             display: flex;
             flex-direction: row; }
             #pick-up-landing-pages .pick-up-landing-pages-form .about-mow-page-programs .about-mow-page-programs-span .ccu-info img {
-              width: 90%; } }
+              width: 90%; }
+
+  #corporate-sponsorships-page article.corporate-sponsorships-page-header {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between; }
+    #corporate-sponsorships-page article.corporate-sponsorships-page-header img {
+      width: 50%;
+      height: auto;
+      object-fit: cover; }
+    #corporate-sponsorships-page article.corporate-sponsorships-page-header div.content-wrapper {
+      width: 50%; }
+  #corporate-sponsorships-page .corporate-sponsorship-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center !important;
+    margin: 0 auto !important;
+    padding: 40px; }
+    #corporate-sponsorships-page .corporate-sponsorship-container .corporate-sponsorship-copy {
+      width: 60%; }
+  #corporate-sponsorships-page .single-sponsor-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%; }
+    #corporate-sponsorships-page .single-sponsor-container article.test {
+      padding: 45px 0px; }
+    #corporate-sponsorships-page .single-sponsor-container article.test .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0 auto; }
+      #corporate-sponsorships-page .single-sponsor-container article.test .content-wrapper .sponsor-logo-container {
+        width: 30%; }
+      #corporate-sponsorships-page .single-sponsor-container article.test .content-wrapper .sponsor-info-container {
+        width: 60%; }
+      #corporate-sponsorships-page .single-sponsor-container article.test .content-wrapper img.sponsor-logo {
+        max-width: 250px;
+        height: auto;
+        padding-bottom: 10px; }
+
+  /* newsletter | overall post container */
+  .single-newsletter-post {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between !important;
+    padding: 30px 0px; }
+    .single-newsletter-post .content-wrapper {
+      width: 70%; }
+      .single-newsletter-post .content-wrapper aside .single-newsletter-date {
+        font-size: 1rem;
+        font-weight: 300;
+        padding-top: 10px; }
+      .single-newsletter-post .content-wrapper aside img.single-newsletter-post-featured-img {
+        width: 300px;
+        height: 250px;
+        object-fit: cover;
+        padding-right: 25px;
+        float: left; }
+
+  .single-newsletter-aside {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 30%; }
+
+  /* featured news landing page */
+  .featured-news-page .featured-news-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 30px; }
+  .featured-news-page .featured-news {
+    width: 60%; }
+    .featured-news-page .featured-news article.featured-news-article {
+      height: 250px;
+      margin-bottom: 20px; }
+      .featured-news-page .featured-news article.featured-news-article:last-of-type {
+        margin-bottom: 40px; }
+      .featured-news-page .featured-news article.featured-news-article img {
+        float: left;
+        padding-right: 40px;
+        width: 250px;
+        height: 250px;
+        object-fit: cover; }
+      .featured-news-page .featured-news article.featured-news-article h3 {
+        padding-top: 50px; }
+      .featured-news-page .featured-news article.featured-news-article h3,
+      .featured-news-page .featured-news article.featured-news-article h4,
+      .featured-news-page .featured-news article.featured-news-article p {
+        text-align: left !important; } }
 /* Very Large Desktop Screens */
 @media screen and (min-width: 1500px) {
   #popover .sticky.donation-popover {

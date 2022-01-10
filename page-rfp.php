@@ -3,13 +3,14 @@
 
 <main id="content">
 <section id="annual-report-page-template">
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <h1><?php the_title(); ?></h1>
-        <div class="annual-report-page">
-            <?php the_content(); ?>
-        </div>
+<div class="annual-report-page-container">
+    <div class="container-pdf">
+        <div class="content-wrapper">
+
+</div>
 </article>
-<?php endwhile; endif; ?>
+</div>
 </section>
 </main>
 <?php get_sidebar(); ?>

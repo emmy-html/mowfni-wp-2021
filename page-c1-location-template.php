@@ -21,15 +21,30 @@
                         <?php if (get_field('location_address')) : ?>
                             <p><?php the_field('location_address'); ?></p>
                         <?php endif; ?>
-                        <?php if (get_field('time_type')) : ?>
-                            <h3><?php the_field('time_type'); ?></h3>
-                        <?php endif; ?>
-                        <?php if (get_field('time_range')) : ?>
-                            <p><?php the_field('time_range'); ?></p>
-                        <?php endif; ?>
-                        <?php if (get_field('service_days')) : ?>
-                            <p><?php the_field('service_days'); ?></p>
-                        <?php endif; ?>
+                        <aside class="multi-pickup-container">
+                            <div>
+                                <?php if (get_field('time_type')) : ?>
+                                    <h3 class="pick-up-time"><?php the_field('time_type'); ?></h3>
+                                <?php endif; ?>
+                                <?php if (get_field('time_range')) : ?>
+                                    <p><?php the_field('time_range'); ?></p>
+                                <?php endif; ?>
+                                <?php if (get_field('service_days')) : ?>
+                                    <p><?php the_field('service_days'); ?></p>
+                                <?php endif; ?>
+                            </div>
+                            <div>
+                                <?php if (get_field('secondary_meal_type')) : ?>
+                                    <h3 class="pick-up-time"><?php the_field('secondary_meal_type'); ?></h3>
+                                <?php endif; ?>
+                                <?php if (get_field('secondary_meal_type_time_range')) : ?>
+                                    <p><?php the_field('secondary_meal_type_time_range'); ?></p>
+                                <?php endif; ?>
+                                <?php if (get_field('secondary_meal_type_service_days')) : ?>
+                                    <p><?php the_field('secondary_meal_type_service_days'); ?></p>
+                                <?php endif; ?>
+                            </div>
+                        </aside>
                         <?php if (get_field('manager_select')) : ?>
                             <h3>
                                 <?php the_field('manager_select'); ?>

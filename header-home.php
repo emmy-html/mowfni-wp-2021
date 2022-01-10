@@ -2,28 +2,20 @@
 <html <?php language_attributes(); ?>>
 
 <head>
+  <meta name="facebook-domain-verification" content="qjv7e98v8jl5uggwbqe484jov7bmit" />
   <meta charset="<?php bloginfo('charset'); ?>" />
   <meta name="viewport" content="width=device-width" />
   <meta name="robots" content="index" />
   <script src="https://kit.fontawesome.com/33391c5587.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
   <?php wp_head(); ?>
-  <!-- Global site tag (gtag.js) - Google Ads: 700123484 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-700123484"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'AW-700123484');
-  </script>
-  <script>
-    gtag('config', 'AW-700123484/uSLFCIjtz7cBENyS7M0C', {
-      'phone_conversion_number': '1 (312) 967-4666'
-    });
-  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KPM8PN4');</script>
+  <!-- End Google Tag Manager -->
   <!-- Facebook Pixel Code -->
 
   <script>
@@ -96,4 +88,8 @@
 </div>
 
 <body id="body-adjust" <?php body_class(); ?>>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPM8PN4"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <div id="container">

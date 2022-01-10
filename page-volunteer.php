@@ -29,7 +29,7 @@
         <div class="content-wrapper">
             <?php the_field('general_description'); ?>
             <div class="button-container">
-                <a href="https://app.betterimpact.com/Application?OrganizationGuid=a20f0471-5f95-4f19-b351-bbadb4e6680d&amp;ApplicationFormNumber=1"
+                <a href="https://mowfni.org/volunteer-interest-form/"
                     class="rounded-blue-button">Sign Up Today ›</a>
             </div>
         </div>
