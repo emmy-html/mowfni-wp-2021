@@ -61,6 +61,7 @@
                             <?php if (get_field('location_days')) : ?>
                               <span><?php the_field('location_days'); ?></span>
                             <?php endif; ?>
+                            
                             </h3>
                         </div>
                         <div>

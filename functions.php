@@ -293,56 +293,6 @@ function custom_post_type()
     // Registering your Custom Post Type
     register_post_type('sponsorships', $args);
 
-        // Registering your Custom Post Type
-    register_post_type('locations', $args);
-
-    // Set UI labels for Custom Post Type
-    $labels = array(
-        'name'                => _x('C2 Locations', 'Post Type General Name', 'mowfni'),
-        'singular_name'       => _x('C2 Location', 'Post Type Singular Name', 'mowfni'),
-        'menu_name'           => __('C2 Locations', 'mowfni'),
-        'parent_item_colon'   => __('C2 Parent Location', 'mowfni'),
-        'all_items'           => __('C2 All locations', 'mowfni'),
-        'view_item'           => __('C2 View Location', 'mowfni'),
-        'add_new_item'        => __('C2 Add New Location', 'mowfni'),
-        'add_new'             => __('C2 Add New', 'mowfni'),
-        'edit_item'           => __('C2 Edit Location', 'mowfni'),
-        'update_item'         => __('C2 Update Location', 'mowfni'),
-        'search_items'        => __('C2 Search Location', 'mowfni'),
-        'not_found'           => __('C2 Not Found', 'mowfni'),
-        'not_found_in_trash'  => __('C2 Not found in Trash', 'mowfni'),
-    );
-
-    // Set other options for Custom Post Type
-
-    $args = array(
-        'label'               => __('c2-locations', 'mowfni'),
-        'description'         => __('C2 Locations', 'mowfni'),
-        'labels'              => $labels,
-        // Features this CPT supports in Post Editor
-        'supports'            => array('title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields',),
-        // You can associate this CPT with a taxonomy or custom taxonomy. 
-        'taxonomies'          => array('genres'),
-        'taxonomies' => array('post_tag'),
-        /* A hierarchical CPT is like Pages and can have
-            * Parent and child items. A non-hierarchical CPT
-            * is like Posts.
-            */
-        'hierarchical'        => false,
-        'public'              => true,
-        'show_ui'             => true,
-        'show_in_menu'        => true,
-        'show_in_nav_menus'   => true,
-        'show_in_admin_bar'   => true,
-        'menu_position'       => 5,
-        'can_export'          => true,
-        'has_archive'         => true,
-        'exclude_from_search' => false,
-        'publicly_queryable'  => true,
-        'capability_type'     => 'post',
-        'show_in_rest' => true,
-
-    );
 
         // Set UI labels for Custom Post Type
         $labels = array(
