@@ -3435,58 +3435,64 @@ footer {
         transition: 1s background; }
 
 /* Single MOW Location/Township Page */
-#single-mow-location-page h1 {
-  background: #a9cf38;
-  color: #003952;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  padding: 10px 0px;
-  margin: 0 auto;
-  width: 100%; }
-  #single-mow-location-page h1 span {
-    color: #003952; }
-#single-mow-location-page h2 {
-  color: #003952;
-  font-weight: 700;
-  font-size: 1.3rem;
-  line-height: 1.3rem;
-  padding: 15px 0px; }
-  #single-mow-location-page h2 span {
-    display: block; }
-@media screen and (min-width: 992px) {
-  #single-mow-location-page h2 span {
-    display: inline-block; } }
-#single-mow-location-page h2 {
-  background: #00b5c2; }
-#single-mow-location-page .single-mow-location-page-content {
-  display: flex;
-  flex-direction: column-reverse; }
-  #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-map {
-    background: #fff;
-    color: #fff;
-    width: 100%; }
-    #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-map h1 {
-      background: #003952;
-      color: #fff; }
-  #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-meal-pickup {
-    background: #fff;
+#single-mow-location-page {
+  background: #ffffff; }
+  #single-mow-location-page h1 {
+    background: #a9cf38;
     color: #003952;
-    width: 100%;
-    padding-bottom: 25px; }
-    #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-meal-pickup h2 {
-      font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 10px 0px;
+    margin: 0 auto;
+    width: 100%; }
+    #single-mow-location-page h1 span {
+      color: #003952; }
+  #single-mow-location-page h2 {
+    color: #003952;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    padding: 15px 0px; }
+    #single-mow-location-page h2 span {
+      display: block; }
+  @media screen and (min-width: 992px) {
+    #single-mow-location-page h2 span {
+      display: inline-block; } }
+  #single-mow-location-page .single-mow-location-desc {
+    background: #ffffff;
+    color: #003952;
+    padding: 10px 0px; }
+  #single-mow-location-page h2 {
+    background: #00b5c2; }
+  #single-mow-location-page .single-mow-location-page-content {
+    display: flex;
+    flex-direction: column-reverse; }
+    #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-map {
+      background: #fff;
+      color: #fff;
       width: 100%; }
-    #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-meal-pickup h3 {
-      padding: 5px 20px;
-      text-align: left; }
-      #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-meal-pickup h3:nth-of-type(1) {
-        padding-top: 20px; }
-    #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-meal-pickup h3.pick-up-time {
-      font-size: 1.25rem !important;
-      line-height: 1.2rem; }
-    #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-meal-pickup p {
-      margin: 0;
-      padding: 0px 20px; }
+      #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-map h1 {
+        background: #003952;
+        color: #fff; }
+    #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-meal-pickup {
+      background: #fff;
+      color: #003952;
+      width: 100%;
+      padding-bottom: 25px; }
+      #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-meal-pickup h2 {
+        font-size: 2rem;
+        width: 100%; }
+      #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-meal-pickup h3 {
+        padding: 5px 20px;
+        text-align: left; }
+        #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-meal-pickup h3:nth-of-type(1) {
+          padding-top: 20px; }
+      #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-meal-pickup h3.pick-up-time {
+        font-size: 1.25rem !important;
+        line-height: 1.2rem; }
+      #single-mow-location-page .single-mow-location-page-content .single-mow-location-page-meal-pickup p {
+        margin: 0;
+        padding: 0px 20px; }
 
 /* Single MOW Location Page Additional Info */
 #single-mow-location-page-additional-info .single-mow-location-page-additional-info-container {
@@ -5078,6 +5084,148 @@ div#n2-ss-3 .n2-ss-button-container a:hover {
         border: 1px solid #00b5c2;
         transition: .3s background; }
 
+#monthly-giving-header {
+  background: transparent;
+  height: auto;
+  position: absolute;
+  top: 20px; }
+
+/* Monthly Giving Club Page */
+/* style the header logo for this specific page */
+img.monthly-giving-logo {
+  width: 200px;
+  height: auto;
+  object-fit: cover; }
+
+#monthly-giving-club-page {
+  /* gradient element */
+  background: url("img/monthly-giving-club-hero.png") no-repeat fixed top center;
+  min-height: 2000px;
+  position: relative;
+  /* hide donation form by default */ }
+  #monthly-giving-club-page:before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to left, #a9cf38, #00b5c2);
+    top: 0px; }
+  #monthly-giving-club-page .monthly-giving-club-container {
+    /* gradient element */
+    background: #ffffff;
+    color: #003952;
+    width: 80%;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    /* heading */
+    /* campaign description */
+    /* "monthly" with a heart box */
+    /* form heading */
+    /* form options */ }
+    #monthly-giving-club-page .monthly-giving-club-container:before {
+      content: ' ';
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      background: linear-gradient(to right, #a9cf38, #00b5c2);
+      top: 0px;
+      left: 0; }
+    #monthly-giving-club-page .monthly-giving-club-container h1 {
+      line-height: 2rem; }
+    #monthly-giving-club-page .monthly-giving-club-container h3 {
+      font-weight: normal;
+      text-transform: none;
+      margin: 0 auto; }
+    #monthly-giving-club-page .monthly-giving-club-container .monthly-giving-indicator {
+      background: #a9cf38;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0 auto;
+      width: 150px;
+      height: 100%;
+      padding: 20px 25px 20px 25px;
+      text-align: center;
+      text-transform: uppercase;
+      position: relative;
+      /* triangle shape */ }
+      #monthly-giving-club-page .monthly-giving-club-container .monthly-giving-indicator:before {
+        content: ' ';
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 45px;
+        left: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        top: 29%;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #a9cf38; }
+    #monthly-giving-club-page .monthly-giving-club-container h2 {
+      background: #003952;
+      color: #ffffff;
+      font-weight: bold;
+      margin-top: 45px;
+      padding: 10px; }
+    #monthly-giving-club-page .monthly-giving-club-container #monthly-giving-option-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* wrapper for the options to allow for hover settings */
+      /* monthly giving options  */ }
+      #monthly-giving-club-page .monthly-giving-club-container #monthly-giving-option-container .monthly-giving-option-wrapper {
+        text-align: center;
+        /* normal state */
+        /* active & hover state */ }
+        #monthly-giving-club-page .monthly-giving-club-container #monthly-giving-option-container .monthly-giving-option-wrapper:hover .monthly-giving-option {
+          background: #003952;
+          color: #ffffff;
+          cursor: pointer;
+          transition: .3s all; }
+      #monthly-giving-club-page .monthly-giving-club-container #monthly-giving-option-container .monthly-giving-option-wrapper.active .monthly-giving-option {
+        background: #003952;
+        color: #ffffff;
+        cursor: pointer;
+        transition: .3s all; }
+      #monthly-giving-club-page .monthly-giving-club-container #monthly-giving-option-container .monthly-giving-option {
+        border: 3px solid #003952;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        font-family: "Poppins", sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 10px 0px;
+        width: 110px;
+        height: 110px;
+        padding: 10px;
+        text-transform: uppercase;
+        /* target custom donation option */ }
+        #monthly-giving-club-page .monthly-giving-club-container #monthly-giving-option-container .monthly-giving-option span {
+          display: block;
+          font-size: 1rem;
+          font-weight: normal;
+          line-height: 1rem; }
+          #monthly-giving-club-page .monthly-giving-club-container #monthly-giving-option-container .monthly-giving-option span:nth-of-type(1) {
+            margin-top: 5px; }
+        #monthly-giving-club-page .monthly-giving-club-container #monthly-giving-option-container .monthly-giving-option:last-of-type span:nth-of-type(1) {
+          margin-top: 10px; }
+  #monthly-giving-club-page .monthly-giving-donation-form {
+    display: none; }
+
+/* temporarily hide too wide element */
+body#monthly-giving-club {
+  overflow-x: hidden; }
+
 /* Large Tablets & Desktop Styles */
 @media screen and (min-width: 992px) {
   /* Universal Styles */
@@ -6126,7 +6274,29 @@ div#n2-ss-3 .n2-ss-button-container a:hover {
       .featured-news-page .featured-news article.featured-news-article h3,
       .featured-news-page .featured-news article.featured-news-article h4,
       .featured-news-page .featured-news article.featured-news-article p {
-        text-align: left !important; } }
+        text-align: left !important; }
+
+  /* monthly giving club landing page */
+  #monthly-giving-club-page {
+    background-size: 100%;
+    min-height: 1200px; }
+    #monthly-giving-club-page .monthly-giving-club-container {
+      top: 35%;
+      /* heading */
+      /* campaign description */
+      /* general content wrapper */
+      /* form options */ }
+      #monthly-giving-club-page .monthly-giving-club-container h1 {
+        font-size: 3rem; }
+      #monthly-giving-club-page .monthly-giving-club-container h3 {
+        width: 80%; }
+      #monthly-giving-club-page .monthly-giving-club-container .content-wrapper {
+        padding: 20px; }
+      #monthly-giving-club-page .monthly-giving-club-container .monthly-giving-indicator {
+        width: 200px; }
+      #monthly-giving-club-page .monthly-giving-club-container #monthly-giving-option-container {
+        flex-flow: row nowrap;
+        justify-content: space-between; } }
 /* Very Large Desktop Screens */
 @media screen and (min-width: 1500px) {
   #popover .sticky.donation-popover {

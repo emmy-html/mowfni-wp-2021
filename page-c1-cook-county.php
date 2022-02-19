@@ -61,7 +61,16 @@
                             <?php if (get_field('location_days')) : ?>
                               <span><?php the_field('location_days'); ?></span>
                             <?php endif; ?>
-                            
+                            </h3>
+                            <?php if (get_field('secondary_meal_type')) : ?>
+                            <h3 class="pick-up-time"><?php the_field('secondary_meal_type'); ?>
+                            <?php endif; ?>
+                            <?php if (get_field('secondary_meal_times')) : ?>
+                              <span><?php the_field('secondary_meal_times'); ?></span>
+                            <?php endif; ?>
+                            <?php if (get_field('secondary_meal_days')) : ?>
+                              <span><?php the_field('secondary_meal_days'); ?></span>
+                            <?php endif; ?>
                             </h3>
                         </div>
                         <div>

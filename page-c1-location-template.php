@@ -5,6 +5,9 @@
     <section id="single-mow-location-page">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <h1><?php the_title() ?></h1>
+                <?php if (get_field('single_location_desc')) : ?>
+                    <p class="single-mow-location-desc content-wrapper"><?php the_field('single_location_desc'); ?></p>
+                <?php endif; ?>
                 <div class="single-mow-location-page-content">
                     <article class="single-mow-location-page-map">
                         <?php if (get_field('map')) : ?>

@@ -1918,6 +1918,12 @@ footer {
 #single-mow-location-page {
   @include page-header;
   @include secondary-page-header;
+  background: $white;
+  .single-mow-location-desc {
+    background: $white;
+    color: $dark-blue;
+    padding: 10px 0px;
+  }
   h2 {
     background: $light-blue;
   }
@@ -3393,6 +3399,176 @@ div#n2-ss-3 .n2-ss-button-container a {
   }
   }
 }
+#monthly-giving-header {
+  background: transparent;
+  height: auto;
+  position: absolute;
+  top: 20px;
+}
+/* Monthly Giving Club Page */
+/* style the header logo for this specific page */ 
+img.monthly-giving-logo {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+#monthly-giving-club-page {
+    /* gradient element */
+    &:before {
+      content: ' ';
+      position:absolute;
+      width:100%;
+      height:10px;
+      background:linear-gradient(to left, $lime-green, $light-blue);
+      top:0px;
+    }
+  background: url('img/monthly-giving-club-hero.png') no-repeat fixed top center;
+  min-height: 2000px;
+  position: relative;
+  .monthly-giving-club-container {
+      /* gradient element */
+      &:before {
+        content: ' ';
+        position:absolute;
+        width:100%;
+        height:10px;
+        background:linear-gradient(to right, $lime-green, $light-blue);
+        top:0px;
+        left:0;
+      }
+    background: $white;
+    color: $dark-blue;
+    width: 80%;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    /* heading */
+    h1 {
+      line-height: 2rem;
+    }
+    /* campaign description */
+    h3 {
+      font-weight: normal;
+      text-transform: none;
+      margin: 0 auto;
+    }
+
+    /* "monthly" with a heart box */
+    .monthly-giving-indicator {
+      background: $lime-green;
+      font-family: $heading-font;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0 auto;
+      width: 150px;
+      height: 100%;
+      padding: 20px 25px 20px 25px;
+      text-align: center;
+      text-transform: uppercase;
+      position: relative;
+      /* triangle shape */
+      &:before {
+        content: ' ';
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 45px;
+        left: 0;
+        right: 0;
+        width: 0; 
+        height: 0;
+        top: 29%; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid $lime-green;
+      }
+    }
+    /* form heading */
+    h2 {
+      background: $dark-blue;
+      color: $white;
+      font-weight: bold;
+      margin-top: 45px;
+      padding: 10px;
+    }
+    /* form options */ 
+    #monthly-giving-option-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* wrapper for the options to allow for hover settings */
+      .monthly-giving-option-wrapper {
+        text-align: center;
+        /* normal state */
+        /* active & hover state */
+        &:hover {
+          .monthly-giving-option {
+            background: $dark-blue;
+            color: $white;
+            cursor: pointer;
+            transition: .3s all;
+          }
+        }
+      }
+      .monthly-giving-option-wrapper.active {
+        .monthly-giving-option {
+          background: $dark-blue;
+          color: $white;
+          cursor: pointer;
+          transition: .3s all;
+        }
+      }
+      /* monthly giving options  */
+      .monthly-giving-option {
+        border: 3px solid $dark-blue;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        font-family: $heading-font;
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 10px 0px;
+        width: 110px;
+        height: 110px;
+        padding: 10px;
+        text-transform: uppercase;
+        span {
+          display: block;
+          font-size: 1rem;
+          font-weight: normal;
+          line-height: 1rem;
+          &:nth-of-type(1) {
+            margin-top: 5px;
+          }       
+        }
+        /* target custom donation option */
+        &:last-of-type {
+          span {
+            &:nth-of-type(1) {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* hide donation form by default */
+  .monthly-giving-donation-form {
+    display: none;
+  }
+}
+/* temporarily hide too wide element */
+body#monthly-giving-club {
+  overflow-x: hidden;
+}
+
+
 /* Large Tablets & Desktop Styles */
 @media screen and (min-width: 992px) {
   /* Universal Styles */
@@ -4773,6 +4949,34 @@ div#n2-ss-3 .n2-ss-button-container a {
           p {
             text-align: left !important;
           }
+        }
+      }
+    }
+    /* monthly giving club landing page */
+    #monthly-giving-club-page {
+      background-size: 100%;
+      min-height: 1200px;
+      .monthly-giving-club-container {
+        top: 35%;
+        /* heading */
+        h1 {
+          font-size: 3rem;
+        }
+        /* campaign description */ 
+        h3 {
+          width: 80%;
+        }
+        /* general content wrapper */ 
+        .content-wrapper {
+          padding: 20px;
+        }
+        .monthly-giving-indicator {
+          width: 200px;
+        }
+        /* form options */
+        #monthly-giving-option-container {
+          flex-flow: row nowrap;
+          justify-content: space-between;
         }
       }
     }
