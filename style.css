@@ -5219,8 +5219,17 @@ img.monthly-giving-logo {
             margin-top: 5px; }
         #monthly-giving-club-page .monthly-giving-club-container #monthly-giving-option-container .monthly-giving-option:last-of-type span:nth-of-type(1) {
           margin-top: 10px; }
-  #monthly-giving-club-page .monthly-giving-donation-form {
-    display: none; }
+  #monthly-giving-club-page #monthly-giving-donation-form {
+    background: rgba(0, 57, 82, 0.75);
+    height: 1200px;
+    display: none;
+    z-index: 9999 !important;
+    position: relative; }
+    #monthly-giving-club-page #monthly-giving-donation-form .monthly-giving-donation-form-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 40px; }
 
 /* temporarily hide too wide element */
 body#monthly-giving-club {

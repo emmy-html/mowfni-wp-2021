@@ -113,3 +113,14 @@ window.onload = function () {
   document.addEventListener( 'wpcf7mailsent', function( event ) {
     location = 'https://mowfni.org/successfully-sent/';
   }, false);
+
+  // monthly giving club pop up
+  function displayDonationForm() {
+    const container = document.getElementById("monthly-giving-donation-form");
+    if (container.style.display !== "block") {
+      container.style.display = "block";
+    }
+    else {
+      container.style.display = "none";
+    }
+  }

@@ -3559,8 +3559,18 @@ img.monthly-giving-logo {
     }
   }
   /* hide donation form by default */
-  .monthly-giving-donation-form {
+  #monthly-giving-donation-form {
+    background: rgba(0, 57, 82, .75);
+    height: 1200px;
     display: none;
+    z-index: 9999 !important;
+    position: relative;
+    .monthly-giving-donation-form-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 40px;
+    }
   }
 }
 /* temporarily hide too wide element */
